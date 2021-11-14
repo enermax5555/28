@@ -76,7 +76,7 @@
               </div>
               <div class="media-content">
                 <p class="title is-4">iO Series 7</p>
-                <p class="subtitle is-6 price hot">$0,50</p>
+                <p class="subtitle is-6 price hot" id="test">$0,50</p>
               </div>
             </div>
 
@@ -89,10 +89,10 @@
         </div>
       </div>
     </div>
-	
+	🔥
   </body>
   <script>  	
-	const select = document.querySelectorAll('.price');
-	const hot = document.querySelector('.hot');
-	hot.appendChild(document.createTextNode("🔥"));</script>
+	let hot = document.querySelectorAll(".hot");
+	hot[0].textContent=hot[0].textContent+"🔥";
+  </script>
 </html>
